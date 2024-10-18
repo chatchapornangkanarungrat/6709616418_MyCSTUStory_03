@@ -32,6 +32,7 @@ nav {
     a {text-decoration:underline;}
     a {font-size: 17px;}
     word-spacing: 200px;
+
 }
 
 #nav1 , #nav2 {
@@ -86,6 +87,30 @@ body {
     scroll = เลื่อน คือ เนื้อหาที่ล้นจะถูกตัดและจะมีแถบเลื่อนมาช่วยในการเลื่อนดูเนื้อหาที่ถูกตัดออกไป
     auto = อัตโนมัติ คือ เมื่อมีเนื้อหามากเกินไป จะมีการปรับให้มีแถบเลื่อนมาช่วยโดยอัตโนมัติเลย ทันที คล้ายกับ scroll แต่ขึ้นอยู่กับเนื้อหามากหรือน้อย*/
 }
+
+@media screen and (max-width: 768px) 
+{
+    .background-video {
+        display: none;
+    }
+    .entirebackground {
+        align-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) 
+{
+    .background-video {
+        display: none;
+    }
+    .entirebackground {
+        align-content: center;
+    }
+}
+
+
 
 .background-video {
     position: absolute;
