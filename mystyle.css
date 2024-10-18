@@ -1,0 +1,608 @@
+@import url('https://fonts.cdnfonts.com/css/motiva-sans');
+
+
+
+/* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage */
+header{
+    color: #d6d5d3;
+    font-family: 'Motiva Sans', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: #171d25;
+    background-size: cover;
+
+    margin: 0px;
+    border: 0px;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background: #171d25;
+    padding: 1px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navmenu , #navmenu {
+    margin: 0px;
+    padding-bottom: 17px;
+    a {color: #5eb2e2}
+    a {text-decoration:underline;}
+    a {font-size: 17px;}
+    word-spacing: 200px;
+}
+
+#nav1 , #nav2 {
+    word-spacing: 0px;
+    margin: 0px;
+    padding-bottom: 17px;
+    a {color: #c1bfbc}
+    a {text-decoration:none;}
+    a {font-size: 17px;}
+    word-spacing: 200px;
+}
+
+.nav1 , .nav2 {
+    word-spacing: 0px;
+    margin: 0px;
+    padding-bottom: 17px;
+    
+    a {color: #c1bfbc}
+    a {text-decoration:none;}
+    a {font-size: 17px;}
+    word-spacing: 200px;
+}
+
+.navpic {
+    width: auto;
+    height: 28px;
+    padding-right: 5px;
+}
+
+
+
+
+/* สำหรับ entire body */
+body {
+    background-color: black; /* #101822;*/
+    color: #c7d5e0; /* Light text color */
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    z-index: 0
+}
+
+
+.entirebackground {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ทำให้ body ครอบคลุมทั้งความสูงของหน้าจอ */
+    margin-top: 0px;
+    overflow: hidden; /*visible = ชัดเจน คือ ค่าเริ่มต้น overflow ไม่ได้ถูกตัดเนื้อหา และแสดงเนื้อหาภายนอก element จนล้นออกมา
+    hidden = ซ่อน คือ จะซ่อนส่วนที่เกินเนื้อหา ที่เหลือจะไม่ให้ปรากฎให้เห็น เหมือนกับการตัดออกไปเลย จะแสดงเท่ากับพื้นที่กำหนดไว้เท่านั้น 
+    scroll = เลื่อน คือ เนื้อหาที่ล้นจะถูกตัดและจะมีแถบเลื่อนมาช่วยในการเลื่อนดูเนื้อหาที่ถูกตัดออกไป
+    auto = อัตโนมัติ คือ เมื่อมีเนื้อหามากเกินไป จะมีการปรับให้มีแถบเลื่อนมาช่วยโดยอัตโนมัติเลย ทันที คล้ายกับ scroll แต่ขึ้นอยู่กับเนื้อหามากหรือน้อย*/
+}
+
+.background-video {
+    position: absolute;
+    overflow: visible;
+    object-fit: fill;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* ทำให้วิดีโออยู่ด้านหลังเนื้อหาอื่น ๆ */
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* if it work don't touch it*/
+}
+
+.cstu{
+    width:150px;
+    height:auto;
+    background-color: #dfdfdf;
+}
+
+/*มัดรวมองค์ประกอบ profile */
+.profile-bgbox {
+    display: flex; /* Use flexbox to position left and right columns */
+     /* Adjust the width to fit the screen better */
+    margin: auto;
+    margin-top: 0px;
+}
+
+.leftcolumnbox { 
+    padding: 10px;
+    background-color: #1b2838; 
+    margin-bottom: 0px; /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); ใส่ก็ได้ไม่ใส่ก็ได้ */
+    
+}
+
+/* Profile Header Section */
+.profile-name {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.profile-pic {
+    background-image: url("resources/mypic.png");
+    width: 120px;
+    height: 140px;
+    border-radius: 0;
+    margin-left: 15px;
+    margin-right: 35px;
+    margin-top: 0px;
+    border: 2px solid #7ea246;
+    box-shadow: 0 0 10px #7ea246;
+
+}
+
+.profile-info {
+    color: #c7d5e0;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-desc, .profile-badge, .profile-desc1, .profile-desc2 {
+    font-size: 14px;
+    color: #66c0f4; 
+    margin-top: 5px;
+}
+
+.profile-contact {
+    color: #62c0f1;
+    text-decoration: none;
+}
+.profile-desc1 {
+    color: #acb2b8; 
+}
+
+.profile-desc2 {
+    color: #acb2b8; 
+    padding-top: 10px;
+}
+
+
+/* About me section */
+.amsec {
+    margin-top: 43px; /* Space between profile and recent am */
+    background-color: #101822;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.amhead {
+    font-size: 18px;
+    color: #66c0f4;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 550px;
+}
+
+.introduce{
+    width: 720px;
+    height: auto;
+}
+
+.ambelowbox {
+    background-color: #2a475e;
+    padding: 6px;
+    border-radius: 0px;
+    height: 1770px;
+}
+
+.minibox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #101822; /* Slightly darker box background */
+    padding: 10px;
+    gap: 15px; /*ช่องหัวข้อกับข้อความ*/
+    border-radius: 4px;
+    border: 1px solid #3c4759;
+    
+}
+
+#miniboxhead {
+    font-size: 18px;
+    color: #66c0f4;
+    margin-bottom: 10px;
+}
+
+.minibox {
+    font-size: 18px;
+    color: #66c0f4;
+    margin-bottom: 10px;
+}
+.miniboxtext {
+    font-size: 15px;
+    color: #66c0f4;
+    margin-bottom: 10px;
+    
+}
+
+
+.activity-item img {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.para1 p {
+    margin: 0;
+    color: #c7d5e0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.para2 p {
+    margin: 0;
+    color: #e4f5ff;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.schoollogo {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bgrightcolumnbox {
+    background-color: #1b2838;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 32px;
+    margin-left: 0px;
+    border: 0px;
+}
+
+.level {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.badge {
+    padding-top: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.subject {
+    font-size: 20px;
+    color: #c7d5e0;
+}
+
+.rightcolumnbox {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #1b2838;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding-top: 5;
+    width: 230px;
+}
+
+.right-columncontent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    gap: 20px; /* ระยะห่าง level กับ friends list */
+}
+
+
+/* Level Box */
+.level-box {
+    background-color: #2a475e;
+    padding: 10px;
+    border-radius: 0px;
+    text-align: center;
+    border: 1px solid #3c4759;
+}
+
+.madewith {
+    font-size: 12px;
+    color: #acb2b8;
+}
+
+.tool {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.year {
+    font-size: 14px;
+    color: #c7d5e0;
+}
+
+/* Friends List Section */
+.contactbox {
+    background-color: #2a475e;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #3c4759;
+    text-align: center;
+}
+
+.contact {
+    font-size: 16px;
+    color: #66c0f4;
+    margin-bottom: 10px;
+}
+
+.contact1 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.cimg {
+    width: 90px;
+    height: auto;
+    align-items: center;
+}
+
+.loading {
+background-size:cover;
+margin-bottom: 0px;
+}
+
+.textfooter {
+    font-family: 'Motiva Sans', sans-serif; 
+    color: white;
+    font-size: 150px;
+    text-shadow: 0.5px 0.5px #ffffff;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    padding: 20px;
+    height: 500px;
+}
+/* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage */
+
+
+
+
+
+
+/* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture */
+.headcolumnboxf {
+    margin: auto;
+    margin-top: 25px; 
+    width: 1200px;
+}
+
+
+.headsecf {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff; 
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: rgb(255,212,0);
+background: linear-gradient(90deg, rgba(255,212,0,0.7457098283931357) 0%, rgba(186,177,49,0.7472698907956319) 88%, rgba(4,4,0,0.750390015600624) 100%);
+    margin-bottom: 15px;
+}
+
+.onecolumnboxf {
+    display: flex; 
+    margin-top: 0px;
+    width: 100%; 
+    max-width: 1920px; 
+    margin: auto; 
+}
+
+.picf {
+    margin: auto;
+    width: 700px;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.miniboxtextf {
+    font-size: 60px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: #5eb2e2;
+}
+
+.subminiboxtextf {
+    background-color: #1b2838;
+    width: auto;
+    height: fit-content;
+    margin-top: 0px;
+    padding: 15px;
+
+    font-size: 40px;
+    line-height: 70px;
+    color: #dadde0;
+    float: left;
+}
+
+
+main {  /* right side */
+    background-color: #101822;
+    width: 400px; /* ให้ main ใช้พื้นที่ 70% ของกล่อง */
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+aside { /* left side */
+    background-color: #101822;
+    width: 700px; /* ให้ aside ใช้พื้นที่ 30% ของกล่อง */
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.lsec1 {
+    background-color: #101822;
+    width: 400px; /* ให้ main ใช้พื้นที่ 70% ของกล่อง */
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.lsec2 {
+    background-color: #101822;
+    width: 400px; /* ให้ main ใช้พื้นที่ 70% ของกล่อง */
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+.rsec1 {
+    background-color: #101822;
+    width: 700px; /* ให้ aside ใช้พื้นที่ 30% ของกล่อง */
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.rsec2 {
+    background-color: #101822;
+    width: 700px; /* ให้ aside ใช้พื้นที่ 30% ของกล่อง */
+    height: fit-content;
+    padding: 20px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+#footerf {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+}
+/* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture *//* สำหรับ myfuture */
+
+
+
+
+
+
+
+/* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney */
+.headcolumnboxj {
+    background-color: #101822;
+    margin: auto;
+    margin-top: 0px; 
+    width: 1000px;
+}
+
+.headsecj {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(39,39,158,1) 86%, rgba(2,0,4,1) 100%);
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+    font-weight: bold;
+    color: #ebe9e9;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+.onecolumnboxj {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียง main และ aside */
+    flex-direction: column;
+    margin-top: 0px;
+    margin: auto; /* จัดให้อยู่กลาง */
+}
+
+.miniboxtextj {
+    font-size: 30px;
+    color: #66c0f4;
+    text-align: center;
+}
+
+.miniboxtextjs {
+    font-size: 30px;
+    color: #66c0f4;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.subminiboxtextj {
+    font-size: 25px;
+    color: #c7d5e0;
+    margin: auto;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+
+.plan1 {
+    padding: 5px;
+    height: auto;
+    width: 900px;
+    margin: auto;
+    
+}
+
+.plan2 {
+    
+    height: auto;
+    width: 900px;
+    margin: auto;
+}
+
+.plan3 {
+    padding: 5px;
+    height: auto;
+    width: 900px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+#footerj {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+}
+/* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney *//* สำหรับ myjourney */
