@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* ทำให้ body ครอบคลุมทั้งความสูงของหน้าจอ */
     margin-top: 0px;
-    overflow: hidden; /*visible = ชัดเจน คือ ค่าเริ่มต้น overflow ไม่ได้ถูกตัดเนื้อหา และแสดงเนื้อหาภายนอก element จนล้นออกมา
+    /*visible = ชัดเจน คือ ค่าเริ่มต้น overflow ไม่ได้ถูกตัดเนื้อหา และแสดงเนื้อหาภายนอก element จนล้นออกมา
     hidden = ซ่อน คือ จะซ่อนส่วนที่เกินเนื้อหา ที่เหลือจะไม่ให้ปรากฎให้เห็น เหมือนกับการตัดออกไปเลย จะแสดงเท่ากับพื้นที่กำหนดไว้เท่านั้น 
     scroll = เลื่อน คือ เนื้อหาที่ล้นจะถูกตัดและจะมีแถบเลื่อนมาช่วยในการเลื่อนดูเนื้อหาที่ถูกตัดออกไป
     auto = อัตโนมัติ คือ เมื่อมีเนื้อหามากเกินไป จะมีการปรับให้มีแถบเลื่อนมาช่วยโดยอัตโนมัติเลย ทันที คล้ายกับ scroll แต่ขึ้นอยู่กับเนื้อหามากหรือน้อย*/
@@ -90,12 +90,29 @@ body {
 
 @media screen and (max-width: 768px) 
 {
-    .introduce {
-        width: 250px;
-        height: auto;
+    header {
+        font-size: 5vw;
+    }
+    
+    .navmenu {
+        display: flex;
+        justify-content: center;
     }
     .background-video {
         display: none;
+    }
+
+    .entirebackground {
+        width: 100%;
+        margin: auto;
+        font-size: 10vw;
+    }
+    .leftcolumnbox {
+        width: 50%;
+    }
+    .rightcolumnbox {
+        width: 10%;
+        margin: auto;
     }
 }
 
@@ -385,6 +402,12 @@ body {
     align-items: center;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
 .loading {
 background-size:cover;
 margin-bottom: 0px;
@@ -393,15 +416,12 @@ margin-bottom: 0px;
 .textfooter {
     font-family: 'Motiva Sans', sans-serif; 
     color: white;
-    font-size: 150px;
+    font-size: 10vw;
     text-shadow: 0.5px 0.5px #ffffff;
     text-align: center;
-    background-color: black;
     width: 100%;
-    margin: auto;
-    margin-top: 0px;
-    padding: 20px;
-    height: 500px;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 /* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage */
 
