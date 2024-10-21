@@ -405,17 +405,14 @@ margin-bottom: 0px;
         display: none;
     }
     .profile-pic {
-        width: 100%;
-        height:auto;
+        width: 120px;
+        height: 140px;
     }
     .introduce,.schoollogo,.cimg, .badge{
         max-width: 100%;
         height:auto;
     }
-        body {
-            display: flex;
-            flex-direction: column;
-        }
+    
     .entirebackground {
         display: flex;
         flex-direction: column;
@@ -440,6 +437,16 @@ margin-bottom: 0px;
         font-size: 5vw;
         width: 100%
     }
+
+    .profile-name {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .profile-desc, .profile-badge, .profile-desc1 {
+        font-size: 12px;
+    }
+
     .navmenu, #navmenu {
         display: flex;
         justify-content: space-around;
@@ -449,8 +456,10 @@ margin-bottom: 0px;
         display: none;
     }
     .profile-pic {
-        width: 100%;
-        height:auto;
+        width: 120px;
+        height: 140px;
+        margin-left: 0px;
+        padding-right: 42.5px;
     }
     .introduce,.schoollogo,.cimg, .badge, .cstu{
         max-width: 100%;
@@ -464,8 +473,8 @@ margin-bottom: 0px;
         
     }
     .leftcolumnbox {
-        max-width: 56%;
-        padding: 15px;
+        max-width: 58%;
+        padding: 12px;
     }
     .rightcolumnbox {
         max-width: 100%;
