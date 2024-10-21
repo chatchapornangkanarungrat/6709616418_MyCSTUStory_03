@@ -90,26 +90,14 @@ body {
 
 @media screen and (max-width: 768px) 
 {
+    .introduce {
+        width: 250px;
+        height: auto;
+    }
     .background-video {
         display: none;
     }
-    .entirebackground {
-        align-content: center;
-    }
-
-
 }
-
-@media screen and (max-width: 360px) 
-{
-    .background-video {
-        display: none;
-    }
-    .entirebackground {
-        align-content: center;
-    }
-}
-
 
 
 .background-video {
@@ -127,7 +115,6 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    /* if it work don't touch it*/
 }
 
 .cstu{
