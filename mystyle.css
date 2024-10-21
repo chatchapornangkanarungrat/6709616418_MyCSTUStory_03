@@ -203,7 +203,7 @@ body {
     background-color: #2a475e;
     padding: 6px;
     border-radius: 0px;
-    height: 1770px;
+    height: 1820px;
 }
 
 .minibox {
@@ -273,8 +273,7 @@ body {
     text-align: left;
     padding-left: 15px;
     padding-right: 10px;
-    padding-top: 25px;
-    
+    padding-top: 28px;
 }
 
 .level {
@@ -399,30 +398,85 @@ margin-bottom: 0px;
     }
     .navmenu, #navmenu {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
     }
     .background-video {
         display: none;
     }
-    .profile-pic ,.introduce,.schoollogo,.cimg, .badge{
-        max-width: 100%;
+    .profile-pic {
+        width: 100%;
+        height:auto;
     }
-    
-
+    .introduce,.schoollogo,.cimg, .badge{
+        max-width: 100%;
+        height:auto;
+    }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
     .entirebackground {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        overflow: hidden;
     }
     .leftcolumnbox {
         max-width: 65%;
-        flex-wrap: nowrap;
     }
     .rightcolumnbox {
         max-width: 50%;
     }
     .bgrightcolumnbox {
         max-width: 30%;
+        
+    }
+}
+
+@media screen and (max-width: 360px) 
+{
+    header {
+        font-size: 5vw;
+        width: 100%
+    }
+    .navmenu, #navmenu {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .background-video {
+        display: none;
+    }
+    .profile-pic {
+        width: 100%;
+        height:auto;
+    }
+    .introduce,.schoollogo,.cimg, .badge, .cstu{
+        max-width: 100%;
+        height: auto;
+    }
+    .profile-bgbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #1b2838;
+        
+    }
+    .leftcolumnbox {
+        max-width: 56%;
+        padding: 15px;
+    }
+    .rightcolumnbox {
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .bgrightcolumnbox {
+        text-align: center;
+        max-width: 54%;
+        margin-left: 0px;
+        padding-bottom: 30px;
     }
 }
 /* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage */
