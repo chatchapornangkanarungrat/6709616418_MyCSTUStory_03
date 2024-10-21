@@ -8,13 +8,13 @@ header{
     font-family: 'Motiva Sans', sans-serif;
     font-size: 50px;
     text-align: center;
-    background-color: #171d25;
     background-size: cover;
+    background-color: #171d25;
     margin: 0px;
     border: 0px;
-
     padding-top: 10px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 nav {
@@ -85,61 +85,12 @@ body {
     flex-wrap: nowrap;
     min-height: 100vh; /* ทำให้ body ครอบคลุมทั้งความสูงของหน้าจอ */
     margin-top: 0px;
+    overflow: hidden;
     /*visible = ชัดเจน คือ ค่าเริ่มต้น overflow ไม่ได้ถูกตัดเนื้อหา และแสดงเนื้อหาภายนอก element จนล้นออกมา
     hidden = ซ่อน คือ จะซ่อนส่วนที่เกินเนื้อหา ที่เหลือจะไม่ให้ปรากฎให้เห็น เหมือนกับการตัดออกไปเลย จะแสดงเท่ากับพื้นที่กำหนดไว้เท่านั้น 
     scroll = เลื่อน คือ เนื้อหาที่ล้นจะถูกตัดและจะมีแถบเลื่อนมาช่วยในการเลื่อนดูเนื้อหาที่ถูกตัดออกไป
     auto = อัตโนมัติ คือ เมื่อมีเนื้อหามากเกินไป จะมีการปรับให้มีแถบเลื่อนมาช่วยโดยอัตโนมัติเลย ทันที คล้ายกับ scroll แต่ขึ้นอยู่กับเนื้อหามากหรือน้อย*/
 }
-
-@media screen and (max-width: 768px) 
-{
-    header {
-        font-size: 5vw;
-    }
-    .navmenu, #navmenu {
-        display: flex;
-        justify-content: center;
-    }
-    .background-video {
-        display: none;
-    }
-    .profile-pic {
-        max-width: 100%;
-        height: auto;
-    }
-    .introduce {
-        max-width: 100%;
-        height: auto;
-    }
-    .schoollogo {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .cimg {
-        max-width: 100%;
-        height: auto;
-    }
-    .badge {
-        max-width: 100%;
-        height: auto;
-    }
-    .entirebackground {
-        display: flex;
-        justify-content: center;
-    }
-    .leftcolumnbox {
-        max-width: 65%;
-        flex-wrap: nowrap;
-    }
-    .rightcolumnbox {
-        max-width: 50%;
-    }
-    .bgrightcolumnbox {
-        max-width: 30%;
-    }
-}
-
 
 .background-video {
     position: absolute;
@@ -437,6 +388,42 @@ margin-bottom: 0px;
     width: 100%;
     justify-content: center;
     padding-bottom: 100px;
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    header {
+        font-size: 5vw;
+        width: 100%
+    }
+    .navmenu, #navmenu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .background-video {
+        display: none;
+    }
+    .profile-pic ,.introduce,.schoollogo,.cimg, .badge{
+        max-width: 100%;
+    }
+    
+
+    .entirebackground {
+        display: flex;
+        justify-content: center;
+    }
+    .leftcolumnbox {
+        max-width: 65%;
+        flex-wrap: nowrap;
+    }
+    .rightcolumnbox {
+        max-width: 50%;
+    }
+    .bgrightcolumnbox {
+        max-width: 30%;
+    }
 }
 /* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage *//* สำหรับ homepage */
 
