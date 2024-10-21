@@ -10,7 +10,6 @@ header{
     text-align: center;
     background-color: #171d25;
     background-size: cover;
-
     margin: 0px;
     border: 0px;
 
@@ -23,6 +22,7 @@ nav {
     padding: 1px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: nowrap;
 }
 
 .navmenu , #navmenu {
@@ -32,6 +32,7 @@ nav {
     a {text-decoration:underline;}
     a {font-size: 17px;}
     word-spacing: 200px;
+    
 
 }
 
@@ -80,6 +81,8 @@ body {
 .entirebackground {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
     min-height: 100vh; /* ทำให้ body ครอบคลุมทั้งความสูงของหน้าจอ */
     margin-top: 0px;
     /*visible = ชัดเจน คือ ค่าเริ่มต้น overflow ไม่ได้ถูกตัดเนื้อหา และแสดงเนื้อหาภายนอก element จนล้นออกมา
@@ -93,26 +96,47 @@ body {
     header {
         font-size: 5vw;
     }
-    
-    .navmenu {
+    .navmenu, #navmenu {
         display: flex;
         justify-content: center;
     }
     .background-video {
         display: none;
     }
+    .profile-pic {
+        max-width: 100%;
+        height: auto;
+    }
+    .introduce {
+        max-width: 100%;
+        height: auto;
+    }
+    .schoollogo {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .cimg {
+        max-width: 100%;
+        height: auto;
+    }
+    .badge {
+        max-width: 100%;
+        height: auto;
+    }
     .entirebackground {
-        width: 100%;
-        margin: auto;
-        font-size: 10vw;
+        display: flex;
+        justify-content: center;
     }
     .leftcolumnbox {
-        width: 50%;
+        max-width: 65%;
+        flex-wrap: nowrap;
     }
     .rightcolumnbox {
-        width: 10%;
-        margin: auto;
+        max-width: 50%;
+    }
+    .bgrightcolumnbox {
+        max-width: 30%;
     }
 }
 
@@ -185,23 +209,15 @@ body {
     font-weight: bold;
 }
 
-.profile-desc, .profile-badge, .profile-desc1, .profile-desc2 {
+.profile-desc, .profile-badge, .profile-desc1 {
     font-size: 14px;
     color: #66c0f4; 
     margin-top: 5px;
 }
 
-.profile-contact {
-    color: #62c0f1;
-    text-decoration: none;
-}
 .profile-desc1 {
     color: #acb2b8; 
-}
-
-.profile-desc2 {
-    color: #acb2b8; 
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 
@@ -296,6 +312,7 @@ body {
     width: 130px;
     height: auto;
     display: block;
+    padding-top: 12px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -303,11 +320,10 @@ body {
 .bgrightcolumnbox {
     background-color: #1b2838;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 10px;
-    padding-top: 32px;
-    margin-left: 0px;
-    border: 0px;
+    padding-top: 25px;
+    
 }
 
 .level {
@@ -340,11 +356,10 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    gap: 20px; /* ระยะห่าง level กับ friends list */
+    gap: 20px; 
 }
 
 
-/* Level Box */
 .level-box {
     background-color: #2a475e;
     padding: 10px;
@@ -368,7 +383,6 @@ body {
     color: #c7d5e0;
 }
 
-/* Friends List Section */
 .contactbox {
     background-color: #2a475e;
     padding: 15px;
@@ -378,21 +392,22 @@ body {
 }
 
 .contact {
-    font-size: 16px;
+    font-size: 15px;
     color: #66c0f4;
     margin-bottom: 10px;
 }
 
 .contact1 {
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .contacts {
     list-style-type: none; /* Remove bullet points */
     padding: 0;
-    margin: 0;
+    margin: auto;
     line-height: 1;
 }
 
