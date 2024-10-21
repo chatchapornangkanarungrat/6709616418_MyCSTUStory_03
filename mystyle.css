@@ -461,7 +461,10 @@ margin-bottom: 0px;
         margin-left: 0px;
         padding-right: 42.5px;
     }
-    .introduce,.schoollogo,.cimg, .badge, .cstu{
+    .cstu {
+        width: 25%
+    }
+    .introduce,.schoollogo,.cimg, .badge{
         max-width: 100%;
         height: auto;
     }
