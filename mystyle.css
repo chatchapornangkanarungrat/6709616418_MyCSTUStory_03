@@ -140,9 +140,10 @@ body {
 
 .profile-pic {
     background-image: url("resources/mypic.png");
+    width: 120px;
+    height: 140px;
     max-width: 120px;
     max-height: 140px;
-    border-radius: 0;
     margin-left: 15px;
     margin-right: 35px;
     margin-top: 0px;
