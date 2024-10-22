@@ -140,8 +140,8 @@ body {
 
 .profile-pic {
     background-image: url("resources/mypic.png");
-    width: 120px;
-    height: 140px;
+    max-width: 120px;
+    max-height: 140px;
     border-radius: 0;
     margin-left: 15px;
     margin-right: 35px;
@@ -542,10 +542,12 @@ margin-bottom: 0px;
         display: none;
     }
     .profile-pic {
-        width: 90px;
+        width: 120px;
         height: 140px;
-        margin-left: 0px;
+        margin-left: 20px;
         padding-right: 42.5px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .cstu {
         width: 25%;
@@ -605,10 +607,12 @@ margin-bottom: 0px;
         display: none;
     }
     .profile-pic {
-        width: 98px;
+        width: 120px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .cstu {
         width: 25%;
@@ -658,7 +662,7 @@ margin-bottom: 0px;
         
     }
     .profile-pic {
-        width: 105px;
+        width: 120px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
@@ -694,7 +698,7 @@ margin-bottom: 0px;
         
     }
     .profile-pic {
-        width: 100px;
+        width: 120px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
@@ -730,7 +734,7 @@ margin-bottom: 0px;
         
     }
     .profile-pic {
-        width: 115px;
+        width: 120px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
