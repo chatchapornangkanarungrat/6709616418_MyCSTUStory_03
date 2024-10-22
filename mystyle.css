@@ -584,8 +584,7 @@ margin-bottom: 0px;
         padding-bottom: 30px;
     }
 }
-
-@media screen and (max-width: 412px) 
+@media screen and (max-width: 430px) 
 {
     header {
         font-size: 5vw;
@@ -637,6 +636,42 @@ margin-bottom: 0px;
     }
     .profile-pic {
         width: 105px;
+        height: 140px;
+        margin-left: 20px;
+        padding-right: 42.5px;
+    }
+    .leftcolumnbox {
+        max-width: 100%;
+        padding: 12px;
+    }
+    .rightcolumnbox {
+        max-width: 100%;
+        margin-right: 15px;
+    }
+    .bgrightcolumnbox {
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 412px) 
+{
+    header {
+        font-size: 5vw;
+        width: 100%
+    }
+
+    body {
+        font-size: smaller;
+    }
+    .miniboxtext {
+        font-size: smaller;
+        
+    }
+    .profile-pic {
+        width: 100px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
