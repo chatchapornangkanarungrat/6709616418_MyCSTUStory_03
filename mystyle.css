@@ -500,12 +500,7 @@ margin-bottom: 0px;
         background-color: #1b2838;
         align-items: center;
     }
-    .entirebackground {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-    }
+    
     .leftcolumnbox {
         max-width: 100%;
     }
