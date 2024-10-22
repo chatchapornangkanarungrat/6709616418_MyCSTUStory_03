@@ -611,8 +611,7 @@ margin-bottom: 0px;
     }
     .rightcolumnbox {
         max-width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-right: 15px;
     }
     .bgrightcolumnbox {
         text-align: center;
@@ -671,8 +670,7 @@ margin-bottom: 0px;
     }
     .rightcolumnbox {
         max-width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin-right: 15px;
     }
     .bgrightcolumnbox {
         text-align: center;
