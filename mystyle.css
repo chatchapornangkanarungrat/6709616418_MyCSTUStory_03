@@ -621,6 +621,78 @@ margin-bottom: 0px;
     }
 }
 
+@media screen and (max-width: 414px) 
+{
+    header {
+        font-size: 5vw;
+        width: 100%
+    }
+
+    body {
+        font-size: smaller;
+    }
+    .miniboxtext {
+        font-size: smaller;
+        
+    }
+    .profile-pic {
+        width: 105px;
+        height: 140px;
+        margin-left: 20px;
+        padding-right: 42.5px;
+    }
+    .leftcolumnbox {
+        max-width: 100%;
+        padding: 12px;
+    }
+    .rightcolumnbox {
+        max-width: 100%;
+        margin-right: 15px;
+    }
+    .bgrightcolumnbox {
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 390px) 
+{
+    header {
+        font-size: 5vw;
+        width: 100%
+    }
+
+    body {
+        font-size: smaller;
+    }
+    .miniboxtext {
+        font-size: smaller;
+        
+    }
+    .profile-pic {
+        width: 115px;
+        height: 140px;
+        margin-left: 20px;
+        padding-right: 42.5px;
+    }
+    .leftcolumnbox {
+        max-width: 100%;
+        padding: 12px;
+    }
+    .rightcolumnbox {
+        max-width: 100%;
+        margin-right: 15px;
+    }
+    .bgrightcolumnbox {
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 360px) 
 {
     header {
