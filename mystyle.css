@@ -628,16 +628,13 @@ margin-bottom: 0px;
         font-size: 5vw;
         width: 100%
     }
-
     .profile-name {
         font-size: 19px;
         font-weight: bold;
     }
-    
     .profile-desc, .profile-badge, .profile-desc1 {
         font-size: 12px;
     }
-
     .navmenu, #navmenu {
         display: flex;
         justify-content: space-around;
@@ -649,7 +646,7 @@ margin-bottom: 0px;
     .profile-pic {
         width: 120px;
         height: 140px;
-        margin-left: 0px;
+        margin-left: 10px;
         padding-right: 42.5px;
     }
     .cstu {
