@@ -584,6 +584,7 @@ margin-bottom: 0px;
         padding-bottom: 30px;
     }
 }
+
 @media screen and (max-width: 430px) 
 {
     header {
@@ -591,18 +592,44 @@ margin-bottom: 0px;
         width: 100%
     }
 
-    body {
-        font-size: smaller;
+    .profile-name {
+        font-size: 19px;
+        font-weight: bold;
     }
-    .miniboxtext {
-        font-size: smaller;
-        
+    
+    .profile-desc, .profile-badge, .profile-desc1 {
+        font-size: 12px;
+    }
+
+    .navmenu, #navmenu {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .background-video {
+        display: none;
     }
     .profile-pic {
-        width: 100px;
+        width: 98px;
         height: 140px;
         margin-left: 20px;
         padding-right: 42.5px;
+    }
+    .cstu {
+        width: 25%;
+    }
+    .introduce,.schoollogo,.cimg, .badge{
+        max-width: 100%;
+        height: auto;
+    }
+    .profile-bgbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        background-color: #1b2838;
+        max-width: 100%;
+        padding: 5px;
     }
     .leftcolumnbox {
         max-width: 100%;
@@ -610,7 +637,8 @@ margin-bottom: 0px;
     }
     .rightcolumnbox {
         max-width: 100%;
-        margin-right: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .bgrightcolumnbox {
         text-align: center;
